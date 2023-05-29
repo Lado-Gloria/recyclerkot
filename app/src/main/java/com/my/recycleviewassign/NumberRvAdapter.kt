@@ -15,6 +15,7 @@ class NumberRvAdapter(var numbersList: List<Int>): Adapter<NumbersViewHolder>(){
 
     override fun onBindViewHolder(holder: NumbersViewHolder, position: Int) {
         val currentNumber = numbersList.get(position)
+        holder.rvnumber
         holder.rvnumber.text = currentNumber.toString()
     }
 
@@ -28,3 +29,8 @@ class NumberRvAdapter(var numbersList: List<Int>): Adapter<NumbersViewHolder>(){
 class NumbersViewHolder(itemView: View): ViewHolder(itemView){
     var rvnumber = itemView.findViewById<TextView>(R.id.rvnumber)
 }
+
+
+
+
+
